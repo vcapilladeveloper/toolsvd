@@ -12,7 +12,7 @@ import UIKit
 private let sn_topBar: Int = 1001
 
 extension UIResponder {
-    /// wait with your own animated images
+    /// wait with your own animated images 
     @discardableResult
     func pleaseWaitWithImages(_ imageNames: Array<UIImage>, timeInterval: Int) -> UIWindow{
         return WaitingVD.wait(imageNames, timeInterval: timeInterval)
