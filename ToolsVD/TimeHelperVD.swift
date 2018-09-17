@@ -10,9 +10,6 @@ import Foundation
 
 public class TimeHelperVD: NSObject {
     public func stringFromSecondsInFormat(_ seconds: Int) -> String {
-        let minutes = seconds / 60
-        let seconds = seconds%60
-        
-        return "\(minutes):\(seconds)s"
+        return "\(seconds / 3600):\((seconds % 3600) / 60):\((seconds % 3600) % 60) time"
     }
 }
