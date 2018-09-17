@@ -74,7 +74,6 @@ enum NoticeType{
 }
 
 public class WaitingVD: NSObject {
-    
     static var windows = Array<UIWindow!>()
     static let rv = UIApplication.shared.keyWindow?.subviews.first as UIView!
     static var timer: DispatchSource!
