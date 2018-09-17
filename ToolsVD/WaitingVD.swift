@@ -11,7 +11,7 @@ import UIKit
 
 private let sn_topBar: Int = 1001
 
-extension UIResponder {
+public extension UIResponder {
     /// wait with your own animated images 
     @discardableResult
     func pleaseWaitWithImages(_ imageNames: Array<UIImage>, timeInterval: Int) -> UIWindow{
@@ -51,7 +51,7 @@ extension UIResponder {
         return WaitingVD.showNoticeWithText(NoticeType.info, text: text, autoClear: autoClear, autoClearTime: 3)
     }
     @discardableResult
-    func notice(_ text: String, type: NoticeType, autoClear: Bool, autoClearTime: Int = 3) -> UIWindow{
+    internal func notice(_ text: String, type: NoticeType, autoClear: Bool, autoClearTime: Int = 3) -> UIWindow{
         return WaitingVD.showNoticeWithText(type, text: text, autoClear: autoClear, autoClearTime: autoClearTime)
     }
     @discardableResult
