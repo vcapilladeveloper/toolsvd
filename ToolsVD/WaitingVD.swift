@@ -199,12 +199,8 @@ public class WaitingVD: NSObject {
         
         window.windowLevel = UIWindowLevelAlert
         window.isHidden = false
-        let opaqueBackground = UIView(frame: (UIApplication.shared.keyWindow?.rootViewController?.view.frame)!)
-        opaqueBackground.backgroundColor = #colorLiteral(red: 0.5076142132, green: 0.5076142132, blue: 0.5076142132, alpha: 0.506046661)
-        
+       
         window.addSubview(mainView)
-        window.addSubview(opaqueBackground)
-        window.bringSubview(toFront: mainView)
         windows.append(window)
         
         mainView.alpha = 0.0
