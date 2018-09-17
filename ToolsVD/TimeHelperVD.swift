@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class TimeHelper {
+public class TimeHelperVD {
     class func stringFromSecondsInFormat(_ seconds: Int) -> String {
         let minutes = seconds / 60
         let seconds = seconds%60
