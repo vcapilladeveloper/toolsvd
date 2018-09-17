@@ -73,7 +73,7 @@ enum NoticeType{
     case info
 }
 
-class WaitingVD: NSObject {
+public class WaitingVD: NSObject {
     
     static var windows = Array<UIWindow!>()
     static let rv = UIApplication.shared.keyWindow?.subviews.first as UIView!
