@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class URLImageVD: UIImageView {
+open class URLImageVD: UIImageView {
     
     public var placeholderImage : UIImage?
     
